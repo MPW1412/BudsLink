@@ -21,9 +21,9 @@ import {
 } from '../../../lib/devices/earfunBuds/earfunBudsConfig.js';
 import {checkFirmware, fetchVoicePacks, downloadVoicePack} from '../../../lib/devices/earfunBuds/earfunServer.js';
 
-// The voice pack installation and the firmware check are switched off in this build. The code
-// stays, so it can be switched on again by setting this to true
-const VoicePackAndFirmwareUi = false;
+// The voice pack installation and the firmware check are switched on in this branch. In the branch
+// for the upstream pull request this is false
+const VoicePackAndFirmwareUi = true;
 
 export const ConfigureWindow = GObject.registerClass({
     GTypeName: 'BudsLink_EarfunBudsConfigureWindow',
